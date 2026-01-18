@@ -40,6 +40,7 @@ body {
     max-width: 600px;
     width: 90%;
     position: relative; /* For positioning the toggle */
+    margin: 40px 0; /* Add margin for vertical spacing on smaller screens */
 }
 
 /* Theme Toggle Button */
@@ -200,4 +201,11 @@ h1 {
 .submit-btn:hover {
     background-color: var(--button-hover);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Comments Section Styles */
+.comments-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--input-border);
 }

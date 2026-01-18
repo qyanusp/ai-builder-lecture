@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a web application that generates 5 sets of 6 random lottery numbers between 1 and 45. The numbers are color-coded based on their values. It features a dark/light mode toggle for better user experience, and includes a contact form for partnership inquiries.
+This is a web application that generates 5 sets of 6 random lottery numbers between 1 and 45. The numbers are color-coded based on their values. It features a dark/light mode toggle for better user experience, includes a contact form for partnership inquiries, and has a Disqus comment section.
 
 ## Features
 
@@ -10,14 +10,15 @@ This is a web application that generates 5 sets of 6 random lottery numbers betw
 *   Displays the numbers in a visually appealing way.
 *   Color-codes numbers based on ranges (1-10, 11-20, 21-30, 31-40, 41-45).
 *   Dark/Light mode toggle.
-*   **Contact Form for partnership inquiries using Formspree.**
+*   Contact Form for partnership inquiries using Formspree.
+*   **Disqus comment section for user engagement.**
 *   Modern and responsive design.
 
 ## Current Plan
 
-*   **HTML:** Maintain the basic structure with a title, a button, and a container. Add a theme toggle button and a new section for the contact form.
+*   **HTML:** Maintain the basic structure. Add a theme toggle button, a new section for the contact form, and a dedicated div for Disqus comments.
 *   **JavaScript:** Update logic to generate 5 rows of numbers. Implement color selection logic. Add theme switching logic.
-*   **CSS:** Add specific classes for number balls and their color ranges. Ensure layout handles multiple rows gracefully. Implement CSS variables for easy theming. Style the new form elements.
+*   **CSS:** Add specific classes for number balls and their color ranges. Ensure layout handles multiple rows gracefully. Implement CSS variables for easy theming. Style the new form elements. Provide basic styling for the Disqus container if needed.
 
 ## Debugging Steps (2024-05-21)
 
