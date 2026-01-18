@@ -4,6 +4,8 @@
     --text-color: #333;
     --button-bg: #4CAF50;
     --button-hover: #45a049;
+    --input-border: #ccc;
+    --input-focus-border: #4CAF50;
     --shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -11,6 +13,8 @@ body.dark-mode {
     --bg-color: #181818;
     --container-bg: #242424;
     --text-color: #ffffff;
+    --input-border: #555;
+    --input-focus-border: #69c8f2;
     --shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -50,6 +54,7 @@ body {
     padding: 5px;
     border-radius: 50%;
     transition: background-color 0.3s ease;
+    color: var(--text-color); /* Ensure icon color changes */
 }
 
 #theme-toggle:hover {
@@ -76,6 +81,7 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px; /* Add some space below the button */
 }
 
 #generator-btn:hover {
@@ -89,6 +95,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    margin-bottom: 40px; /* Space before contact form */
 }
 
 .lotto-set {
@@ -117,3 +124,80 @@ h1 {
 .ball-range-3 { background-color: #ff7272; } /* 21-30 Red */
 .ball-range-4 { background-color: #aaaaaa; } /* 31-40 Gray */
 .ball-range-5 { background-color: #b0d840; } /* 41-45 Green */
+
+
+/* Contact Form Styles */
+.contact-form-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--input-border);
+    text-align: left; /* Align form elements to the left within its section */
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--text-color);
+    font-size: 1.8em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: var(--container-bg); /* Use container bg for inputs */
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: var(--input-focus-border);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: var(--button-bg);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: var(--button-hover);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
