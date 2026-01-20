@@ -1,28 +1,28 @@
-# Lotto Number Generator
+## Purpose and Capabilities
 
-## Overview
+This project is a simple web-based Lotto Number Generator. It allows users to generate a set of random lottery numbers. The application also includes a partnership inquiry form and a comments section. It is monetized through Google AdSense.
 
-This is a web application that generates 5 sets of 6 random lottery numbers between 1 and 45. The numbers are color-coded based on their values. It features a dark/light mode toggle for better user experience, includes a contact form for partnership inquiries, and has a Disqus comment section.
+## Style, Design, and Features
 
-## Features
+### Core Functionality
+- **Lotto Number Generation:** Generates a set of random numbers with the click of a button.
+- **Partnership Inquiry Form:** A form to allow users to send partnership inquiries.
+- **Comments Section:** A Disqus-powered comments section for user feedback.
+- **Dark Mode:** A toggle to switch between light and dark themes.
 
-*   Generates 5 sets of 6 unique random numbers.
-*   Displays the numbers in a visually appealing way.
-*   Color-codes numbers based on ranges (1-10, 11-20, 21-30, 31-40, 41-45).
-*   Dark/Light mode toggle.
-*   Contact Form for partnership inquiries using Formspree.
-*   **Disqus comment section for user engagement.**
-*   Modern and responsive design.
+### Monetization
+- **Google AdSense:** The site is configured to display Google Ads.
 
-## Current Plan
+### Files
+- **`index.html`:** The main HTML file.
+- **`style.css`:** The stylesheet for the application.
+- **`main.js`:** The JavaScript file for the application logic.
+- **`ads.txt`:** Configuration file for Google AdSense.
+- **`blueprint.md`:** This file.
 
-*   **HTML:** Maintain the basic structure. Add a theme toggle button, a new section for the contact form, and a dedicated div for Disqus comments.
-*   **JavaScript:** Update logic to generate 5 rows of numbers. Implement color selection logic. Add theme switching logic.
-*   **CSS:** Add specific classes for number balls and their color ranges. Ensure layout handles multiple rows gracefully. Implement CSS variables for easy theming. Style the new form elements. Provide basic styling for the Disqus container if needed.
+## Current Task
 
-## Debugging Steps (2024-05-21)
-
-*   **Problem:** The "Generate Numbers" button is not responding, and CSS styles are not being applied correctly.
-*   **Hypothesis:** There might be an issue with how the browser loads and interprets Web Components or external CSS/JS files in this specific environment.
-*   **Action Taken:** To isolate the problem, the JavaScript has been simplified. Web Components are temporarily removed. The number-generating logic now creates simple `<div>` elements and styles them *directly* using JavaScript. This ensures the core functionality works independently of the external CSS file and complex component lifecycle.
-*   **Next Step:** Verify if the button works with the simplified script. If it works, the problem lies with either Web Component implementation or CSS file loading. If not, the issue is more fundamental (e.g., event listener attachment).
+The last task was to integrate Google AdSense into the application. This involved:
+- Adding the AdSense script to `index.html`.
+- Adding the AdSense meta tag to `index.html`.
+- Creating the `ads.txt` file.
